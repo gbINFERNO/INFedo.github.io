@@ -1,17 +1,27 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #202020; /* Light grey background */
+    background-color: #202020; 
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333; /* Dark grey header */
-    color: #fff; /* White text */
+    background: linear-gradient(to right, #3379a3, #000000); /* Gradient background */
+    color: #fff; 
     text-align: center;
     padding: 1em;
+    height:190px;
 }
 
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
 section {
     display: flex;
     flex-wrap: wrap;
@@ -41,9 +51,9 @@ footer {
 }
 
 
-header p {
-    font-size: 1.2em;
-}
+
+
+/*carousel*/
 
 #galleryCarousel {
     margin-top: 20px;
@@ -72,11 +82,51 @@ header p {
     font-size: 1.2em;
 }
 
-/* General styles */
-body {
-    font-family: 'Helvetica', sans-serif;
-}
-
 .container {
     max-width: 1200px;
+}
+#galleryCarousel {
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.carousel-item {
+    text-align: center;
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 15px;
+    transition: opacity 0.5s ease; /* Smooth transition for caption */
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+    margin: 0;
+}
+
+/* Hover effect on carousel item */
+.carousel-item:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+.carousel-item:hover .carousel-caption {
+    opacity: 1; /* Show caption on hover */
+}
+
+/* Previous and Next control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; /* Dark grey control icons */
 }
