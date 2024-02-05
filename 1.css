@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #202020; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Dark grey header */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.project {
+    background-color: #fff; /* White project box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gradient shadow effect */
+    margin: 1em;
+    overflow: hidden;
+    width: 300px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333; /* Dark grey footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1em;
+}
+
