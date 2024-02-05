@@ -40,3 +40,43 @@ footer {
     padding: 1em;
 }
 
+
+header p {
+    font-size: 1.2em;
+}
+
+#galleryCarousel {
+    margin-top: 20px;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.carousel-caption h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+}
+
+/* General styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
