@@ -1,31 +1,49 @@
-
 body {
     margin: 0;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f2f2f2;
-  }
+    min-height: 100vh;
+    background-color: #000000;
+}
 
-  .sketchfab-container {
+.sketchfab-container {
     max-width: 600px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 8px;
-  }
+}
 
-  iframe {
+iframe {
+width: 400%;
+height: 300px; 
+}
+.sketchfab-container iframe {
+    width: 1400px; /* Adjust as needed */
+    max-width: 100%; /* Set a maximum width if necessary */
+    height: 350px; /* Adjust as needed */
+}
+
+/* Ensure responsiveness for carousel images */
+.carousel-item img {
     width: 100%;
-    height: 400px; /* Adjust the height as needed */
-    border: none;
-  }
+    height: auto;
+}
+
+/* Add this if you want the carousel container to be responsive */
+#galleryCarousel {
+    max-width: 100%; /* Set a maximum width if necessary */
+}
+
+/* Add this if you want to make the Sketchfab section responsive */
+.sketchfab-section {
+    max-width: 100%; /* Set a maximum width if necessary */
+}
+
 header {
-    background: linear-gradient(to right, #3379a3, #000000); /* Gradient background */
-    color: #fff; 
+    background: linear-gradient(to right, #3379a3, #000000);
+    color: #fff;
     text-align: center;
     padding: 1em;
-    height:190px;
+    height: 190px;
 }
 
 header h1 {
@@ -37,6 +55,7 @@ header p {
     font-size: 1.2em;
     margin: 0;
 }
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -45,9 +64,9 @@ section {
 }
 
 .project {
-    background-color: #fff; /* White project box */
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gradient shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1em;
     overflow: hidden;
     width: 300px;
@@ -59,60 +78,25 @@ section {
 }
 
 footer {
-    background-color: #333; /* Dark grey footer */
-    color: #fff; /* White text */
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 1em;
 }
 
-
-
-
-/*carousel*/
-
 #galleryCarousel {
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .carousel-inner {
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .carousel-item {
     text-align: center;
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 15px;
-}
-
-.carousel-caption h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.carousel-caption p {
-    font-size: 1.2em;
-}
-
-.container {
-    max-width: 1200px;
-}
-#galleryCarousel {
-    margin-top: 20px;
-    overflow: hidden; /* Hide overflowing content */
-}
-
-.carousel-inner {
-    border-radius: 10px;
-    overflow: hidden; /* Hide overflowing content */
-}
-
-.carousel-item {
-    text-align: center;
-    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+    transition: transform 0.5s ease;
 }
 
 .carousel-item img {
@@ -123,7 +107,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     padding: 15px;
-    transition: opacity 0.5s ease; /* Smooth transition for caption */
+    transition: opacity 0.5s ease;
 }
 
 .carousel-caption h2,
@@ -131,17 +115,15 @@ footer {
     margin: 0;
 }
 
-/* Hover effect on carousel item */
 .carousel-item:hover {
-    transform: scale(1.05); /* Increase size on hover */
+    transform: scale(1.05);
 }
 
 .carousel-item:hover .carousel-caption {
-    opacity: 1; /* Show caption on hover */
+    opacity: 1;
 }
 
-/* Previous and Next control icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #333; /* Dark grey control icons */
+    background-color: #333;
 }
