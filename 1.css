@@ -1,8 +1,50 @@
 body {
     margin: 0;
+    display: flex;
     justify-content: center;
     min-height: 100vh;
     background-color: #000000;
+    font-family: Arial, sans-serif; /* Example of a global font */
+}
+
+a {
+    color: #1CAAD9;
+    text-decoration: none; /* Removes underline from all links */
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color: #1687A7;
+    text-decoration: underline; /* Adds underline on hover/focus for better accessibility */
+}
+header {
+    background: linear-gradient(to right, #8e0404, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header img {
+    max-height: 150px; /* Adjust based on your preference */
+    width: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the logo */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .sketchfab-container {
@@ -10,132 +52,52 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-radius: 8px;
+    margin: auto; /* Centers the Sketchfab container */
 }
 
-.sketchfab-embed-wrapper {
-    font-size: 13px;
-    font-weight: normal;
-    margin: 5px;
-    color: #4A4A4A;
-}
-
-.sketchfab-embed-wrapper a {
-    font-weight: bold;
-    color: #1CAAD9;
-}
-
-iframe {
-width: 400%;
-height: 300px; 
-}
 .sketchfab-container iframe {
-    width: 1400px; /* Adjust as needed */
-    max-width: 100%; /* Set a maximum width if necessary */
+    width: 100%; /* Ensures iframe is responsive */
     height: 350px; /* Adjust as needed */
 }
-
-/* Ensure responsiveness for carousel images */
-.carousel-item img {
-    width: 100%;
-    height: auto;
-}
-
-/* Add this if you want the carousel container to be responsive */
-#galleryCarousel {
-    max-width: 100%; /* Set a maximum width if necessary */
-}
-
-/* Add this if you want to make the Sketchfab section responsive */
-.sketchfab-section {
-    max-width: 100%; /* Set a maximum width if necessary */
-}
-
-header {
-    background: linear-gradient(to right, #3379a3, #000000);
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    height: 190px;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-header p {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 2em;
-}
-
-.project {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 1em;
-    overflow: hidden;
-    width: 300px;
-}
-
-.project img {
+#galleryCarousel, .carousel-inner, .carousel-item img {
+    padding: 12px;
     max-width: 100%;
     height: auto;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-}
-
-#galleryCarousel {
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.carousel-inner {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
 .carousel-item {
     text-align: center;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item img {
-    border-radius: 10px;
 }
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 15px;
-    transition: opacity 0.5s ease;
-}
-
-.carousel-caption h2,
-.carousel-caption p {
-    margin: 0;
-}
-
-.carousel-item:hover {
-    transform: scale(1.05);
+    border-radius: 95px;
+    padding: 12px;
+    display: none; /* Default state hidden, shown on hover */
 }
 
 .carousel-item:hover .carousel-caption {
-    opacity: 1;
+    display: block; /* Shows caption on hover */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #333;
+    border-radius: 50%; /* Circular background */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+.social-media-links a {
+    color: #fff; /* White color for icons */
+    font-size: 20px; /* Size of the icons */
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ff0000; 
 }

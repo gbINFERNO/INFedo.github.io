@@ -1,0 +1,15 @@
+@charset "utf-8";
+	.NormalCharacterStyle1
+{
+	font-family : ROG Fonts;
+	font-size : 559px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle
+{
+	font-family : ROG Fonts;
+	font-size : 559px;
+	color : #FF0000;
+	color : rgb(255, 0, 0);
+}
